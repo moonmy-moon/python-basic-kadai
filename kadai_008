@@ -1,0 +1,27 @@
+変数varが3の倍数の場合はFizz、5の倍数の場合はBuzz、3と5の倍数の場合はFizzBuzz、それ以外の場合は変数varを出力する条件式を記述してください。
+ただし、変数varは正の整数とします。
+
+
+
+"""
+問題にvarが正の整数としか条件がなかったので
+・　1 ~ 100までの正の数
+・　ランダムで表示
+・　選ばれたvarの数の出力
+を追加しました。
+"""
+
+import random
+
+var = random.randint(1, 100)
+print(var)
+
+
+if var % 3 == 0 and var % 5 == 0:
+  print("FizzBuzz")
+elif var % 3 == 0:
+  print("Fizz")
+elif var % 5 == 0:
+  print("Buzz")
+else:
+  print(var)
