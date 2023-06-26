@@ -1,0 +1,6 @@
+def shopping_price(price, tax_rate):  # 税は%で設定
+  tax =  price * tax_rate / 100 
+  total_price = price + tax
+  print(f"{total_price}円です")
+
+shopping_price(800, 10)  # 問題より、税率は10%指定
