@@ -1,0 +1,15 @@
+class Human:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def printinfo(self):
+        print(self.name)
+        print(self.age)
+
+
+# Humanクラスのインスタンスを作成し、変数に代入
+person = Human("侍太郎", 25)
+
+# printinfoメソッドの呼び出し
+person.printinfo()
